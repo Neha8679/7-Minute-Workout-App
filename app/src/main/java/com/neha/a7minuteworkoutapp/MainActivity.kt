@@ -1,5 +1,6 @@
 package com.neha.a7minuteworkoutapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.FrameLayout
@@ -18,12 +19,9 @@ class MainActivity : AppCompatActivity() {
 
         //val flStartButton : FrameLayout = findViewById(R.id.flStart)
         binding?.flStart?.setOnClickListener {
-            Toast.makeText(
-                this@MainActivity,
-                "Here we will start the exercise.",
-                Toast.LENGTH_SHORT
+            val intent =Intent(this,ExerciseActivity::class.java)
+            startActivity(intent)
 
-            ).show()
         }
     }
 
