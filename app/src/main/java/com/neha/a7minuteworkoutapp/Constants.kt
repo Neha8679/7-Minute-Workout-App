@@ -70,7 +70,7 @@ object Constants {
 //        )
 //        exerciseList.add(wallSit)
         val lunge = ExerciseModel(
-            10,"Lunge",
+            9,"Lunge",
             R.drawable.ic_lunges,
             false,
             false
